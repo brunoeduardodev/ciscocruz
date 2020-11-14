@@ -50,7 +50,7 @@ export const Navbar = styled.nav`
 
 export const MessageArea = styled.section`
   display: flex;
-  justify-self: right;
+  justify-self: center;
   flex-direction: column;
   max-width: 390px;
   grid-area: message;
@@ -59,7 +59,7 @@ export const MessageArea = styled.section`
 
   @media (max-width: 800px) {
     margin: 0px 20px;
-    max-width: 100%;
+    max-width: 300px;
   }
 `
 

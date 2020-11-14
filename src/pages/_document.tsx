@@ -1,3 +1,4 @@
+import favicon from '@assets/favicon.ico'
 import Document, {
   DocumentInitialProps,
   DocumentContext,
@@ -57,7 +58,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400&display=swap"
             rel="stylesheet"
           />
-          <link rel="icon" href="https://rocketseat.com.br/favicon.ico" />
+          <link rel="icon" href={favicon} />
         </Head>
         <body>
           <Main />

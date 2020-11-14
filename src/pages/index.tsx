@@ -45,7 +45,7 @@ const Home: React.FC = () => {
       <Social>
         <h2>Visite minhas redes</h2>
         <SocialNetworks>
-          <Link href="https://www.instagram.com/cisco_lil/?hl=pt-br">
+          <Link href="https://api.whatsapp.com/send?phone=+55084996452268">
             <Whatsapp />
           </Link>
           <Link href="https://www.facebook.com/francisco.aac.3/">

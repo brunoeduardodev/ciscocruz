@@ -98,6 +98,7 @@ export const BookArea = styled.section`
   background-color: #fff;
   margin-bottom: 50px;
   height: 320px;
+  transition: 0.3s;
   h1 {
     font-size: 20px;
     font-family: 'Ubuntu' sans-serif;
@@ -119,7 +120,6 @@ export const BookArea = styled.section`
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-
     h3 {
       font-size: 12px;
       color: ${(props) => props.theme.colors.primary};
@@ -134,6 +134,10 @@ export const BookArea = styled.section`
 
       color: ${(props) => props.theme.colors.primary};
     }
+  }
+
+  &:hover {
+    transform: scale(1.15);
   }
 `
 
@@ -166,7 +170,7 @@ export const Social = styled.section`
     color: ${(props) => props.theme.colors.primary};
 
     margin-bottom: 24px;
-
+    font-weight: 400;
     @media (max-width: 800px) {
       font-size: 14px;
       margin-bottom: 12px;
@@ -209,6 +213,7 @@ export const CopyArea = styled.section`
   h3 {
     font-size: 20px;
     margin-bottom: 14px;
+    font-weight: 400;
   }
 
   div.svg-background {

@@ -1,7 +1,8 @@
-import BookImage from '@assets/book.png'
-import { Copy } from '@styled-icons/boxicons-regular/'
+import BookImage from '@assets/book.jpeg'
+import { Copy as CopyIcon } from '@styled-icons/boxicons-regular/'
 import { Download } from '@styled-icons/evaicons-solid'
 import { Whatsapp, FacebookF, Instagram } from '@styled-icons/fa-brands'
+import Copy from 'clipboard-copy'
 import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
@@ -36,10 +37,10 @@ const Home: React.FC = () => {
         </Book>
         <h1>Amor atômico</h1>
         <h2>Francisco Cruz</h2>
-        <div className="download">
+        <a download href="/Amor_atomico_3.pdf" className="download">
           <h3>BAIXE AQUI</h3>
           <Download />
-        </div>
+        </a>
       </BookArea>
 
       <Social>
@@ -65,10 +66,10 @@ const Home: React.FC = () => {
         <Author>- O pequeno príncipe</Author>
       </MessageArea>
 
-      <CopyArea>
+      <CopyArea onClick={() => Copy('https://ciscocruz.netlify.app/')}>
         <h3>Copiar link</h3>
         <div className="svg-background">
-          <Copy />
+          <CopyIcon />
         </div>
       </CopyArea>
     </Container>

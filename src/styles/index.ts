@@ -115,11 +115,12 @@ export const BookArea = styled.section`
     color: ${(props) => props.theme.colors.secundary};
   }
 
-  div.download {
+  a.download {
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
     h3 {
       font-size: 12px;
       color: ${(props) => props.theme.colors.primary};
@@ -200,7 +201,7 @@ export const SocialNetworks = styled.div`
   }
 `
 
-export const CopyArea = styled.section`
+export const CopyArea = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
